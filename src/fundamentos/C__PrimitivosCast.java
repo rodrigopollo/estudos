@@ -9,10 +9,13 @@ public class C__PrimitivosCast {
         float b = (float) 1.1234564862;
         System.out.println(b);
 
-        int c = 340;
+        int c = 5;
         /* Conversao errada --> --- byte d = c; --- o java nao vai fazer essa conversao
-        de maneira implicita pois nao eh aceita, vc esta tentando colocar um primitivo
-        maior (int) em um primitivo de menor capacidade (byte). Voce tem q fazer CAST
+        de maneira implicita pois nao eh aceita, lembrando que o JAVA nao analisa o valor (5 no caso)
+        e sim o TIPO...
+        INT > BYTE, ou seja voce esta tentando colocar 1 geledadeira (tamanho do INT)
+        em 1 gaveta (tamanho do byte), o java diz q nao cabe, mas se vc faz o cast e especifica q quer
+        colocar 1 latinha (o valor 5 no caso) na gaveta ele diz q cabe.
         */
         byte d = (byte) c; // essa eh uma conversao EXPLICITA tbm chamada ""CAST""
         System.out.println(d);
@@ -29,10 +32,9 @@ public class C__PrimitivosCast {
         int n2 = 9;
         System.out.println(n1 + (double) n2);//Essa conversao tbm transforma o resultado em DOUBLE.
 
+        //todo================================================================================================
 
-        // ================================================================================================
-
-
+        
         /* --- NOTAS ---
          Numeros inteiros (sem casa decimal)
 
@@ -44,7 +46,8 @@ public class C__PrimitivosCast {
 
          Ou seja.... Os menores (ex byte) cabem em espaços maiores como short, int long.
          Mas um primitivo com maior capacidade (ex: int) nao cabe em primitivos de menor
-         espaço como shor ou byte.
+         espaço como shor ou byte de maneira IMPLICITA, somente de maneira EXPLICITA
+         e isso dependendo do valor pode gerar perda de informaçao.
 
          A conversao do menor (ex: byte) para o maior (ex: int) se chama --> Conversao IMPLICITA
          A conversao do maior (ex: int) para o menor (ex: byte) se chama --> Conversao EXPLICITA
