@@ -15,6 +15,14 @@ public class C__StringToNumber {
             Janela 1 -> 9
             Janela 2 -> 0
         O System.out ira mostrar 90 pois ele ira juntar as 2 STRING inseridas nas 2 janelas.
+        
+        ** NOTA: ao fazer valor1 + valor2 voce nao esta SOMANDO porque as variaveis valor 1 e 2
+        nao sao valores numericos, sao do tipo STRING, e sendo assim, em vez de somar elas
+        fazem uma CONCATENIZAÇÃO.
+        
+        ** NOTA2:  Exemplo -> valor1(5) + valor2(2), iram concatenar ficando 55.
+        se fossem valores numericos seria 10, mas string nao se soma.
+        
          */
         System.out.println(valor1 + valor2);
 
@@ -27,8 +35,11 @@ public class C__StringToNumber {
          - Integer.parseInt() --> Classe Wrapper Integer do primitivo int
          E isso funciona para todos os primitivos, byte, short, long, float.
          */
-        double num1 = Double.parseDouble(valor1);
-        double num2 = Double.parseDouble(valor2);
+        double num1 = Double.parseDouble(valor1); //transforma valor1 (STRING) no primitivo DOUBLE
+        double num2 = Double.parseDouble(valor2); //transforma valor2 (STRING) no primitivo DOUBLE
+        
+        // ** NOTA: Agora que fizemos o CAST do valor1 e 2 de STRING para PRIMITIVO (valor numerico)
+        // ja podemos fazer calculos em vez de concatenar.
 
         //Para mostrar a soma podemos fazer de 2 maneiras... Modo direto como abaixo ou.
         System.out.println(num1 + num2);
@@ -43,10 +54,7 @@ public class C__StringToNumber {
         System.out.println("Soma: "+ soma);
         System.out.println("Média: "+ soma / 2);
 
-
-
-
-
+        
 
     }
 }
