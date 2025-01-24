@@ -13,7 +13,7 @@ public class Atribuicao {
         c /= a; // c = c / b;  c(6) / a(3) = 6
         c %= 2; // c = c % 2; se a divisao der 0 eh par, se nao eh impar.
 
-        System.out.println(c);
+        System.out.println("Resultado = " + c);
 
 
 
