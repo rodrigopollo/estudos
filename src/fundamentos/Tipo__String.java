@@ -36,34 +36,39 @@ public class Tipo__String {
         System.out.println(s.equals("boa tarde"));//verifica se a string eh igual, -- FALSE -- eh "Boa tarde"
         System.out.println(s.equalsIgnoreCase("boa tarde"));//verifica ignorando CASE entao -- TRUE --
         
-        // .startWith() --> retorna um valor de TRUE or FALSE verificando o inicio da string
-        // .endsWith() --> retorna um valor de TRUE or FALSE verificando o final da string
-        // .toLowerCase() --> transforma a string em letras minusculas
-        // .toUpperCase() --> transforma a string em letras maiuscula
-        // .concat() --> add a string digitada no final da string.
-        // .s + "!!!" --> faz a mesma coisa que o concat
-        // .length() --> verifica quantos caracteres tem a string selecionada
-        // .equals() --> verifica se a string eh igual ao digitado dentro de EQUALS
-        // .equalsIgnoreCase() --> ignora maisculas e minusculas e verifica se a string é igual (TRUE or FALSE)
+        /* .startWith() --> retorna um valor de TRUE or FALSE verificando o inicio da string
+         .endsWith() --> retorna um valor de TRUE or FALSE verificando o final da string
+         .toLowerCase() --> transforma a string em letras minusculas
+         .toUpperCase() --> transforma a string em letras maiuscula
+         .concat() --> add a string digitada no final da string.
+         .s + "!!!" --> faz a mesma coisa que o concat
+         .length() --> verifica quantos caracteres tem a string selecionada
+         .equals() --> verifica se a string eh igual ao digitado dentro de EQUALS
+         .equalsIgnoreCase() --> ignora maisculas e minusculas e verifica se a string é igual (TRUE or FALSE)
+         .trim() --> tira os espaços em branco
         
         var nome = "Pedro";
         var sobrenome = "dos Santos";
         var idade = 33;
         var salario = 12_345.987;
-        //Dessa maneira vc so imprimi as variaveis
-        //
+        Dessa maneira vc so imprimi as variaveis
+        
         System.out.printf("O senhor %s %s tem %d anos e recebe R$%.2f", nome, sobrenome, idade, salario);
-        //Ja aqui vc atribui todas as variaveis dentro de outra variavel -- FRASE -- e vc consegue usar ela
-        //quantas vezes voce quiser.
+        Ja aqui vc atribui todas as variaveis dentro de outra variavel -- FRASE -- e vc consegue usar ela
+        quantas vezes voce quiser.
         String frase = String.format("\nO senhor %s %s tem %d anos e recebe R$%.2f\n", nome, sobrenome, idade, salario);
         System.out.println(frase);
-        //Aqui vc atribui td pra variavel -- maisUmaFrase -- e usa o modelo de info, pula linha, info etc...
-        // o \n pula pra proxima linha.
+        
+        Aqui vc atribui td pra variavel -- maisUmaFrase -- e usa o modelo de info, pula linha, info etc...
+        o \n pula pra proxima linha.
+        
         String maisUmaFrase = "Nome: " + nome
                 + "\nSobrenome: " + sobrenome
                 + "\nIdade: " + idade
                 + "\nSalario: " + salario;
         System.out.println(maisUmaFrase);
+        
+         */
         
         
     }
