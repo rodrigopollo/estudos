@@ -11,14 +11,23 @@ public class Tipo__StringEquals {
         Abaixo dou os exemplos:
         */
 
-        //--> Exemplo 1 = Se voce tem 2 valores de texto atribuidos a String o resultado eh (TRUE)
+        //--> Exemplo 1 = Se voce tem 2 valores iguais de texto atribuidos a String o resultado eh (TRUE)
         System.out.println("2" == "2"); // String 2 eh igual String 2? --> TRUE
 
         //--> Exemplo 2 = Se vc tem tem 1 valor atribuido a uma variavel o resultado eh (FALSE)
         String s1 = new String("2"); // atribuimos o valor 2 a s1 tipo String
         System.out.println("2" == s1); // String 2 eh igual a s1?? -->  FALSE
-
-        //--> Exemplo 3 = Se vc quer fazer o exemplo 2 ter o resultado (TRUE), use (equals)
+        
+        /*--> Exemplo 2.1 = Esse eh o mesmo caso do Exemplo 2... SS nao eh igual 2 mesmo tendo
+         atribuido o valor 2 a SS. Ou seja, 2 != SS, mas eh igual a 2 (ex 1) que esta atribuido a SS.
+         2 == 2
+         2 != SS
+         */
+         
+        String ss = "2";
+        System.out.println("2" == "ss");
+        
+        //--> Exemplo 3 = Se vc quer fazer o exemplo 2 e 2.1 ter o resultado (TRUE), use (equals)
         System.out.println("2".equals(s1)); // O conteudo das Strings eh igual? --> TRUE
 
         Scanner entrada = new Scanner(System.in);
