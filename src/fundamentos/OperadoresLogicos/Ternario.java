@@ -27,6 +27,15 @@ public class Ternario {
         System.out.println("\nTem desconto? -> " + resultado);
 
         entrada.close();
+        
+        /* NOTA: LINHA 25 ate 27;
+                        String resultado = temDesconto ? "Sim." : "Não.";
+                        System.out.println("\nTem desconto? -> " + resultado);
+        
+        o que voce esta fazendo eh dizendo que o resultado (TRUE OR FALSE) da variavel temDesconto (linha24)
+        sera alterado parar SIM ou NAO no lugar de TRUE OR FALSE....
+        Em seguida vc ja faz um print para exibir no console se ele vai ou nao ter desconto.
+        */
     }
 }
      /* double media = 8.6;
