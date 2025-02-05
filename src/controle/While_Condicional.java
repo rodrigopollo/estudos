@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class While_Condicional {
     public static void main(String[] args) {
-        /* While Condicional = Enquanto nao digitar a palabra(numero etc) correta o
-        programa vai continuar infinitamente, nesse exemplo a palavra eh (sair).
+        /* While Condicional = Enquanto nao digitar a palabra(numero etc) correto o
+        programa vai continuar infitamente, nesse exemplo a palavra eh (sair).
 
         Vou detalhar essa expressao para que possamos entender melhor
         while (!chave.equalsIgnoreCase("sair"))
 
         Voce esta dizendo:
-          --> Enquanto a (String chave) for DIFERENTE de (sair) continue. {  }
+          --> Se a (String chave) for DIFERENTE de (sair) entao continue.[]
 
         NOTA: Vale lembrar que o simbolo "!" eh equivalente a negação no java.
         Sendo assim ao colocar (!chave) voce diz, enquanto CHAVE diferente de SAIR continue.
@@ -28,7 +28,9 @@ public class While_Condicional {
         } System.out.println("\nObrigado e volte sempre!");
 
         entrada.close();
-        
+
+
+
         // Ao tentar acessar ou processar uma variável que não foi inicializada (que não possui valor)
         // o código não irá compilar.
         // Isso se chama null pointer exception.
