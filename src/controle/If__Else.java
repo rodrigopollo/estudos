@@ -24,4 +24,22 @@ public class If__Else {
             System.out.printf("\nO numero %d é impar",numero);
         }
     }
+    /* NOTAS IMPORTANTES!!!!
+    
+    O if, pode existir sem o else como voce ve da linha 12 ate a 17, mas o ELSE nao existe sem o IF
+    Se o IF eh igual q SE o ELSE eh igual SE NAO.
+    entao vamos colocar de uma maneira bem simples de veer.
+    
+    NUMERO = 2
+    if (SE) (numero % 2 == 0)   faça   {
+            System.out.printf("\nO numero %d é par",numero);
+            
+        } else (SE NAO)  faça o seguinte   {
+            System.out.printf("\nO numero %d é impar",numero);
+        }
+     
+     Como voce pode ver o IF_ELSE funciona como se e se nao...
+     SE numero / 2 tiver resto ZERO, exiba a msg de q o numero eh PAR.
+     SE NAO.. se a divisao de numero / 2 tiver qualquer valor que nao seja ZERO, exiba IMPAR.
+     */
 }
